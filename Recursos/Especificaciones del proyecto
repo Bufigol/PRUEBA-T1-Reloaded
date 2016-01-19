@@ -1,0 +1,46 @@
+Especificaciones
+Implementa una interfaz JavaFX siguiendo las siguientes especificaciones:
+
+* La funcionalidad (contextualización o tema de la aplicación lo decide el 
+  alumno/a voluntariamente, ¿para qué sirve?)
+  
+* Utilizar una estructura de paquetes Modelo-Vista-Controlador para el 
+  proyecto (con al menos dos paquetes: "control" y "view")
+  
+* Elegir iconos del siguiente set de iconos material design para el diseño
+  y colocad los que useis en la carpeta "img" dentro de "view"
+  
+* Nombre y tamaño de la venta My Reload (500x400)
+
+* Usar diferentes layouts para colocar los elementos en las diferentes áreas
+  de la interfaz (garantizando que maximizar ventana deja todos los elementos
+  presentados del mismo modo que en 500x400)
+  
+* Modificar cursor a mano cuando se sitúa sobre el botón de enviar (el botón 
+  además proyecta una sombra)
+  
+* Desde Scene Builder asignar a los elementos propiedades CSS (directas) así
+  como clases CSS que se encuentran en una hoja de estilo.
+  
+* Implementar funcionalidad para el botón de enviar con un método que resida 
+  en un controlador fuera de la clase principal (MyMain.java) de nombre 
+  MyController.java y que asociamos en Scene Builder: la acción ejecuta un
+  nuevo Stage con una estructura y funcionalidad a decidir voluntariamente 
+  (no es obligatorio asociar/guardar los campos pero sí que la estructura 
+  esté bien diseñada)
+  
+* Las vistas FXML se llaman OneStage.fxml y OtherStage.fxml
+
+* Generar JavaDoc con la implementación comentada (al menos descripción, 
+  autor, versión, ver otros, …)
+  
+* Entregar a través de GitHub el proyecto
+
+* Generar un paquete nativo para su instalación (opcional)
+
+
+Entrega
+* Mostrar al profesor la interfaz funcionando aplicando los cambios que
+  solicite y respondiendo las cuestiones que plantee.
+  
+* Subir el ZIP/enlace a GitHub del proyecto al campus.
