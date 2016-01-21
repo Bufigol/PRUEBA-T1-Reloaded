@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controlador_OneStage">
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controlador_OneStage">
    <children>
-      <GridPane layoutX="14.0" layoutY="14.0" prefHeight="183.0" prefWidth="272.0" AnchorPane.bottomAnchor="180.0" AnchorPane.topAnchor="25.0">
+      <GridPane layoutX="14.0" layoutY="14.0" prefHeight="195.0" prefWidth="304.0" AnchorPane.bottomAnchor="180.0" AnchorPane.topAnchor="25.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -21,23 +23,35 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Nombre:" />
-            <Label text="Apellido" GridPane.rowIndex="1" />
-            <Label text="Fecha de Nacimiento" GridPane.rowIndex="3" />
+            <Label style="-fx-font-size: 12;" styleClass="label-bright" text="Nombre:" />
+            <Label style="-fx-font-size: 12;" styleClass="label-bright" text="Apellido:" GridPane.rowIndex="1" />
+            <Label style="-fx-font-size: 12;" styleClass="label-bright" text="Fecha de Nacimiento:" GridPane.rowIndex="3" />
             <TextField GridPane.columnIndex="1" />
             <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label text="Pais de Origen" GridPane.rowIndex="2" />
+            <Label style="-fx-font-size: 12;" styleClass="label-bright" text="Pais de Origen" GridPane.rowIndex="2" />
             <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="151.0" text="Borrar Datos" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" onAction="#cambiar_stage" prefHeight="25.0" prefWidth="151.0" text="Cambia el escenario" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#cambiar_stage" prefHeight="28.0" prefWidth="143.0" text="Cambia el escenario" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button alignment="CENTER" cancelButton="true" mnemonicParsing="false" prefHeight="28.0" prefWidth="119.0" text="Borrar Datos" underline="true" GridPane.rowIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
          </children>
       </GridPane>
-      <VBox layoutX="330.0" layoutY="115.0" prefHeight="200.0" prefWidth="233.0" AnchorPane.bottomAnchor="180.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="25.0">
+      <VBox layoutX="330.0" layoutY="115.0" prefHeight="200.0" prefWidth="233.0" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="25.0">
          <children>
             <Label prefHeight="17.0" prefWidth="236.0" text="Ingresa un comentario" />
             <TextArea prefHeight="183.0" prefWidth="194.0" />
          </children>
       </VBox>
+      <ImageView fitHeight="200.0" fitWidth="149.0" layoutX="244.0" layoutY="236.0" preserveRatio="true" AnchorPane.bottomAnchor="0.2342376708984375" AnchorPane.leftAnchor="245.0" AnchorPane.rightAnchor="210.0">
+         <image>
+            <Image url="@IMG/datospersonales.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

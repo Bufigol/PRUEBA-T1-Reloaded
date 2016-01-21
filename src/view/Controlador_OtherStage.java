@@ -1,9 +1,5 @@
 package view;
 
-
-import javafx.fxml.FXML;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
 import application.Main;
 
 public class Controlador_OtherStage {
