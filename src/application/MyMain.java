@@ -14,7 +14,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 
-public class Main extends Application {
+public class MyMain extends Application {
 	private Stage OneStage;
 	private Stage OtherStage;
 	private BorderPane rootLayout;
@@ -35,7 +35,7 @@ public class Main extends Application {
 		try {
 			// Load root layout from fxml file.
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Main.class
+			loader.setLocation(MyMain.class
 					.getResource("../view/root_layot.fxml"));
 			rootLayout =  loader.load();
 
@@ -59,7 +59,7 @@ public class Main extends Application {
 
 			// Load person overview.
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Main.class.getResource("../view/OneStage.fxml"));
+			loader.setLocation(MyMain.class.getResource("../view/OneStage.fxml"));
 			AnchorPane OneStage = (AnchorPane) loader.load();
 			// personOverview.getStylesheets().add("");
 
@@ -80,7 +80,7 @@ public class Main extends Application {
 
 			// Load person overview.
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Main.class
+			loader.setLocation(MyMain.class
 					.getResource("../view/OtherStage.fxml"));
 			AnchorPane OneStage = loader.load();
 			// personOverview.getStylesheets().add("");
