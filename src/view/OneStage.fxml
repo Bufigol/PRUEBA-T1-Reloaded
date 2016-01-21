@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controlador_OneStage">
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MyController">
    <children>
       <GridPane layoutX="14.0" layoutY="14.0" prefHeight="195.0" prefWidth="304.0" AnchorPane.bottomAnchor="180.0" AnchorPane.topAnchor="25.0">
         <columnConstraints>
@@ -31,7 +31,7 @@
             <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Label style="-fx-font-size: 12;" styleClass="label-bright" text="Pais de Origen" GridPane.rowIndex="2" />
             <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button alignment="CENTER" mnemonicParsing="false" onAction="#cambiar_stage" prefHeight="28.0" prefWidth="143.0" text="Cambia el escenario" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#cambiar_otherstage" prefHeight="28.0" prefWidth="143.0" text="Cambia el escenario" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>

@@ -1,17 +1,24 @@
 package view;
 
-import javafx.fxml.FXML;
+import javafx.stage.Stage;
 import application.MyMain;
 
 public class MyController {
-	private MyMain main;
+	private MyMain mainApp;
 
-	public void setMainApp(MyMain main) {
-		this.main = main;
+	public void setMainApp(MyMain mainApp) {
+		this.mainApp = mainApp;
 	}
 
-	@FXML
-	private void handleExit() {
-		System.exit(0);
+	public void cambiar_otherstage() {
+		this.mainApp.mostrar_OtherStage();
+	}
+
+	public void cambiar_OneStage() {
+		this.mainApp.mostrar_OneStage();
+	}
+
+	public MyMain getMainApp() {
+		return mainApp;
 	}
 }
