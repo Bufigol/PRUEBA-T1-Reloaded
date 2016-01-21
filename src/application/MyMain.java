@@ -22,7 +22,17 @@ public class MyMain extends Application {
 			this.escenario = primaryStage;
 			this.escenario.setTitle("My Reload");
 			initRootLayout();
-			showOneStage();
+
+			// Load person overview.
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MyMain.class
+					.getResource("../view/OneStage.fxml"));
+			AnchorPane OneStage = (AnchorPane) loader.load();
+			// personOverview.getStylesheets().add("");
+
+			// Give the controller access to the main app.
+			MyController controller = loader.getController();
+			controller.setMainApp(this);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -51,24 +61,6 @@ public class MyMain extends Application {
 
 	}
 
-	public void showOneStage() {
-		try {
-
-			// Load person overview.
-			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(MyMain.class
-					.getResource("../view/OneStage.fxml"));
-			AnchorPane OneStage = (AnchorPane) loader.load();
-			// personOverview.getStylesheets().add("");
-
-			// Give the controller access to the main app.
-			MyController controller = loader.getController();
-			controller.setMainApp(this);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
 	public void mostrar_OtherStage() {
 		try {
 			FXMLLoader loader = new FXMLLoader();
@@ -76,18 +68,13 @@ public class MyMain extends Application {
 					.getResource("../view/OtherStage.fxml"));
 
 			layout = loader.load();
-
-			// Show the scene containing the root layout.
 			Scene scene = new Scene(layout);
 			escenario.setScene(scene);
-
-			// Give the controller access to the main app.
 			MyController controller = loader.getController();
 			controller.setMainApp(this);
 
 			escenario.show();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -99,18 +86,13 @@ public class MyMain extends Application {
 					.getResource("../view/OneStage.fxml"));
 
 			layout = loader.load();
-
-			// Show the scene containing the root layout.
 			Scene scene = new Scene(layout);
 			escenario.setScene(scene);
-
-			// Give the controller access to the main app.
 			MyController controller = loader.getController();
 			controller.setMainApp(this);
 
 			escenario.show();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

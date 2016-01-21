@@ -1,6 +1,5 @@
 package view;
 
-import javafx.stage.Stage;
 import application.MyMain;
 
 public class MyController {
